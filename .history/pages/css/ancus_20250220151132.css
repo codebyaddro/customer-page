@@ -1,0 +1,202 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --light-orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+}
+
+/* --universal style -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* -- website app text selection cursor style */
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-light);
+}
+
+/* -- add new container style -- */
+
+.cba-add-new-cus-container {
+    width: 100%;
+}
+
+/* -- top menus style--  */
+
+.cba-ancus-top-menus {
+    background-color: var(--white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    padding: 0px 40px;
+    margin-bottom: 15px;
+}
+
+.cba-ancus-top-menus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -20px;
+}
+
+.cba-ancus-top-menus ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -- active menu style -- */
+
+.cba-ancus-active-menu {
+    color: var(--white)!important;
+    background-color: var(--main-green);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* -- menu hover style -- */
+
+.cba-ancus-light-up:hover {
+    color: var(--light-orange);
+}
+
+/* -- list container style -- */
+
+.cba-ancus-add-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.cba-ancus-heading-add-new-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.cba-ancus-heading h2 {
+    color: var(--light-black);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* -- add-new-btn style -- */
+
+.cba-ancus-cate-list-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.cba-ancus-cate-list-btn {
+    background-color: var(--main-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cba-ancus-cate-list-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.cba-ancus-add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- category add field style -- */
+
+/* -- label red star style -- */
+.cba-ancus-required {
+    color: var(--red);
+}
+
+.cba-ancus-category-add-field {
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.cba-ancus-form-con {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 25% 75%;
+}
+
+.form-con .label {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.form-con .input {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form-con .label label {
+    color: var(--light-black);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 22.5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 7.5px 10px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 7.5px 10px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: var(--main-green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}

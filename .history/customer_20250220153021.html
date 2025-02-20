@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/customer.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Customer - Page</title>
+</head>
+<body style="background-color: var(--gray-white);">
+    <div class="cba-customer-container">
+        <div class="cba-cusc-top-menus">
+            <ul>
+                <li><a href="/customer.html" class="cba-cusc-active-menu">Customer List</a></li>
+                <li><a href="/pages/" class="cba-cusc-light-up">Add New Customer</a></li>
+            </ul>
+        </div>
+        <div class="cba-cusc-list-container">
+            <div class="cba-cusc-heading-add-new-btn">
+                <div class="cba-cusc-heading">
+                    <h2>Customer List</h2>
+                </div>
+                <div class="cba-cusc-add-new-btn">
+                    <i class='cba-cusc-add-icon bx bx-plus-circle'></i>
+                    <a href="/inner-pages/html/anc.html">Add New Customer</a>
+                </div>
+            </div>
+            <div class="cba-cusc-list-short-dpdwn-search-box">
+                <div class="cba-cusc-list-short-dpdwn">
+                    <h3>Show</h3>
+                    <select name="10" id="">
+                        <option value="">10</option>
+                        <option value="">20</option>
+                        <option value="">30</option>
+                        <option value="">All</option>
+                    </select>
+                    <h3>entries</h3>
+                </div>
+                <div class="cba-cusc-search-box">
+                    <legend>Search: <input type="text"></legend>
+                </div>
+            </div>
+            <div class="cba-cusc-table-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th title="SL">SL</th>
+                            <th title="Code">Customer Name</th>
+                            <th title="Category Name">Customer Number</th>
+                            <th title="Status">Total Purchase</th>
+                            <th title="Status">Total Points</th>
+                            <th title="Status">Status</th>
+                            <th title="Action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Md Adnan Addro</td>
+                            <td>019XXXXXXXX</td>
+                            <td>50</td>
+                            <td><span>1000</span> Points</td>
+                            <td><span class="cba-cusc-ls1">Level One</span></td>
+                            <td>
+                                <a title="Edit" href="#"><i class='cba-cusc-edit-icon bx bx-edit'></i></a>
+                                <a title="Delete" href="#"><i class='cba-cusc-delete-icon bx bx-trash'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Md Adnan Addro</td>
+                            <td>019XXXXXXXX</td>
+                            <td>50</td>
+                            <td><span>500</span> Points</td>
+                            <td><span class="cba-cusc-ls2">Level Two</span></td>
+                            <td>
+                                <a title="Edit" href="#"><i class='cba-cusc-edit-icon bx bx-edit'></i></a>
+                                <a title="Delete" href="#"><i class='cba-cusc-delete-icon bx bx-trash'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Md Adnan Addro</td>
+                            <td>019XXXXXXXX</td>
+                            <td>50</td>
+                            <td><span>100</span> Points</td>
+                            <td><span class="cba-cusc-ls3">Level Three</span></td>
+                            <td>
+                                <a title="Edit" href="#"><i class='cba-cusc-edit-icon bx bx-edit'></i></a>
+                                <a title="Delete" href="#"><i class='cba-cusc-delete-icon bx bx-trash'></i></a>
+                            </td>
+                        </tr>
+                        <tr class="cba-cusc-no-data-available">
+                            <th colspan="7">No data available in table</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cba-cusc-entries-details-list-page-btn">
+                <div class="cba-cusc-entries-details">
+                    Showing <span>1</span> to <span>5</span> of <span>5</span> entries
+                </div>
+                <div class="cba-cusc-list-page-btn">
+                    <button>Previous</button>
+                    <h4><span>1</span></h4>
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

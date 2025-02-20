@@ -1,0 +1,337 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2; /* For body*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --main-green: #157343;
+    --main-lt: #37A000;
+    --orange: #FFA500;
+    --orange-t: FD7E14;
+    --lt-orange: #FFECCC;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    --blue: #0000FF;
+    --lt-blue: #e6e6ff;
+}
+
+/* --universal style -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* -- website app text selection cursor style */
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-lt);
+}
+
+/* -- customer container style -- */
+
+.cba-customer-container {
+    width: 100%;
+    /* margin-top: 25px; */
+}
+
+/* -- top menus style--  */
+
+.cba-cusc-top-menus {
+    background-color: var(--white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    padding: 10px 40px;
+    margin-bottom: 15px;
+}
+
+.cba-cusc-top-menus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -20px;
+}
+
+.cba-cusc-top-menus ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -- active menu style -- */
+
+.cba-cusc-active-menu {
+    color: var(--white)!important;
+    background-color: var(--main-green);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* -- menu hover style -- */
+
+.cba-cusc-light-up:hover {
+    color: var(--lt-orange);
+}
+
+/* -- list container style -- */
+
+.cba-cusc-list-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.cba-cusc-heading-add-new-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+    padding: 20px 0px;
+}
+
+.cba-cusc-heading h2 {
+    color: var(--lt-black);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* -- add-new-btn style -- */
+
+.cba-cusc-add-new-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.cba-cusc-add-new-btn {
+    background-color: var(--main-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cba-cusc-add-new-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.cba-cusc-add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- list-short-dpdwn-search-box style -- */
+
+.cba-cusc-list-short-dpdwn-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+/* -- list-short-dpdwn style -- */
+
+.cba-cusc-list-short-dpdwn {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-cusc-list-short-dpdwn h3 {
+    color: var(--lt-black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cba-cusc-list-short-dpdwn select {
+    color: var(--lt-black);
+    appearance: none;
+    height: 25px;
+    width: 30px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 2.5px;
+}
+
+/* -- search-box style -- */
+
+.cba-cusc-search-box {
+    display: flex;
+    align-items: center;
+}
+
+.cba-cusc-search-box legend {
+    color: var(--lt-black);
+}
+
+.cba-cusc-search-box input {
+    outline: none;
+    height: 25px;
+    width: 193px;
+    border: 1px solid var(--gray-black);
+}
+
+/* -- table-list style --*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        padding: 0rem;
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: var(--black);
+    }
+}
+
+/* -- thead style -- */
+
+thead {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 15px;
+}
+
+thead tr th {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr td {
+    font-size: 0.875rem;
+}
+
+tbody tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- tbody style -- */
+
+/* status style */
+
+.cba-cusc-ls1 {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-cusc-ls2 {
+    color: var(--blue);
+    background-color: var(--lt-blue);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-cusc-ls3 {
+    color: var(--orange);
+    background-color: var(--lt-orange);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+/* -- action style -- */
+
+.cba-cusc-edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 7px 7px;
+    margin-right: 2.5px;
+    border: 1px solid var(--green);
+    font-size: 20px;
+}
+
+.cba-cusc-edit-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+.cba-cusc-delete-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    padding: 7px 7px;
+    margin-left: 2.5px;
+    border: 1px solid var(--red);
+    font-size: 20px;
+}
+
+.cba-cusc-delete-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+/* -- no data style */
+
+.cba-cusc-no-data-available th {
+    font-size: 14px;
+    font-weight:500;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+/* -- entries-details-list-page-btn style -- */
+
+.cba-cusc-entries-details-list-page-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.cba-cusc-entries-details {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.cba-cusc-list-page-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cba-cusc-list-page-btn > button {
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cba-cusc-list-page-btn > h4 {
+    color: var(--white);
+    background-color: var(--main-lt);
+    font-size: 19px;
+    font-weight: 400;
+    padding: 3px 12.5px;
+    border-radius: 5px;
+}

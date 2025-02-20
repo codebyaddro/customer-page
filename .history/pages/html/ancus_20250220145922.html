@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/pages/css/ancus.css">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Add New Customer - Page</title>
+</head>
+<body>
+    <div class="cba-add-new-cus-container">
+        <div class="cba-ancus-top-menus">
+            <ul>
+                <li><a href="/index.html" class="cba-ancus-light-up">Category</a></li>
+                <li><a href="/inner-pages/html/anc.html" class="active-menu">Add New Category</a></li>
+            </ul>
+        </div>
+        <div class="add-container">
+            <div class="heading-add-new-btn">
+                <div class="heading">
+                    <h2>Add Category</h2>
+                </div>
+                <div class="cate-list-btn">
+                    <i class='add-icon bx bx-list-ul'></i>
+                    <a href="/index.html">Category List</a>
+                </div>
+            </div>
+            <div class="category-add-field">
+                <div class="form-con">
+                    <div class="label">
+                        <label for="category-name">Category Name<span class="required">*</span></label>
+                        <label for="category-name">Status<span class="required">*</span></label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="category-name" id="category-name" placeholder="Category Name">
+                        <select title="" name="Status" id="#">
+                            <option value="">-- Select Status --</option>
+                            <option title="Active" value="active">Active</option>
+                            <option title="Inactive" value="inactive">Inactive</option>
+                        </select>
+                        <div class="submit-btn">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
